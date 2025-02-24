@@ -12,6 +12,8 @@ func RegisterRouter(router *gin.Engine) {
 	{
 		route.GET("/status", controllers.CheckStatusInformationStudent)
 		route.GET("/students", controllers.CheckListStudents)
+		route.GET("/notificationStudent", controllers.NotifyStudent)
+		route.GET("/notificationCareer", controllers.NotifyCareer)
 	}
 
 }
